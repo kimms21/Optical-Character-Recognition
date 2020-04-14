@@ -813,7 +813,7 @@ def text_img_generator(width,height,kor_source,eng_source,font_path):
             
         if np.random.random()<0.08:
             d.rectangle([(margin_start-0.3,top_margin-0.3),(margin_start+text_shape[0]+0.3,top_margin+text_shape[1]+1)], 
-            outline = (rand_text_color,rand_text_color,rand_text_color),width = 1)
+            outline = (rand_text_color,rand_text_color,rand_text_color))
         else:
             if np.random.random()<0.1:
                 d.ellipse([(margin_start-0.3,top_margin-0.3),(margin_start+text_shape[0]+0.3,top_margin+text_shape[1]+1)],
